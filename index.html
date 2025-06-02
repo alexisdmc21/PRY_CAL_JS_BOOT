@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo colaborativo | Calculadora</title>
+    <link rel="stylesheet" href="./public/lib/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-5">
+        <h1>CALCULADORA</h1>
+        <hr>
+        <input type="text" id="display" class="form-control mb-3">
+
+        <button class="btn btn-danger" onclick="borrar()">C</button>
+        <button class="btn btn-primary" onclick="multiplicar()">X</button>
+        <button class="btn btn-primary" onclick="dividir()">/</button>
+        <button class="btn btn-primary" onclick="restar()">-</button>
+        <button onclick="mostrarEnCalculadora('7')">7</button>
+        <button onclick="mostrarEnCalculadora('8')">8</button>
+        <button onclick="mostrarEnCalculadora('9')">9</button>
+        <button class="btn btn-primary" onclick="sumar()">+</button>
+        <button onclick="mostrarEnCalculadora('4')">4</button>
+        <button onclick="mostrarEnCalculadora('5')">5</button>
+        <button onclick="mostrarEnCalculadora('6')">6</button>
+
+        <button onclick="mostrarEnCalculadora('1')">1</button>
+        <button onclick="mostrarEnCalculadora('2')">2</button>
+        <button onclick="mostrarEnCalculadora('3')">3</button>
+
+        <button onclick="mostrarEnCalculadora('0')">0</button>
+
+        <button class="btn btn-success" onclick="calcular()">=</button>
+    </div>
+
+    <script src="./public/js/operaciones.js"></script>
+    <script src="./public/lib/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
