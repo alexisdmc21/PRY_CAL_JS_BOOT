@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo colaborativo | Calculadora</title>
     <link rel="stylesheet" href="./public/lib/bootstrap-5.3.6-dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container py-5">
-        <h1>CALCULADORA</h1>
-        <hr>
-        <input type="text" id="display" class="form-control mb-3">
-
-        <button class="btn btn-danger" onclick="limpiar()">C</button>
-        <button class="btn btn-primary" onclick="botonPresionado('*')">X</button>
-        <button class="btn btn-primary" onclick="botonPresionado('/')">/</button>
-        <button class="btn btn-primary" onclick="botonPresionado('-')">-</button>
-        <button onclick="botonPresionado('7')">7</button>
-        <button onclick="botonPresionado('8')">8</button>
-        <button onclick="botonPresionado('9')">9</button>
-        <button class="btn btn-primary" onclick="botonPresionado('+')">+</button>
-        <button onclick="botonPresionado('4')">4</button>
-        <button onclick="botonPresionado('5')">5</button>
-        <button onclick="botonPresionado('6')">6</button>
-
-        <button onclick="botonPresionado('1')">1</button>
-        <button onclick="botonPresionado('2')">2</button>
-        <button onclick="botonPresionado('3')">3</button>
-
-        <button onclick="botonPresionado('0')">0</button>
-
-        <button class="btn btn-success" onclick="calcular()">=</button>
+    <div class="align-items-center d-flex justify-content-center vh-100">
+        <div class="container bg-black py-3 rounded-3">
+            <div class="text-center text-white">
+                <h1>CALCULADORA</h1>
+                <hr>
+                <input type="text" id="display" class="d-flex w-100">
+            </div>
+            <div class="pt-3">
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('7')">7</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('8')">8</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('9')">9</button>
+                <button class="btn btn-warning rounded-5" onclick="botonPresionado('+')">+</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('4')">4</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('5')">5</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('6')">6</button>
+                <button class="btn btn-warning rounded-5" onclick="botonPresionado('-')">-</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('1')">1</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('2')">2</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('3')">3</button>
+                <button class="btn btn-warning rounded-5" onclick="botonPresionado('/')">/</button>
+                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('0')">0</button>
+                <button class="btn btn-secondary rounded-5" onclick="calcular()">=</button>
+                <button class="btn btn-warning rounded-5" onclick="limpiar()">C</button>
+                <button class="btn btn-warning rounded-5" onclick="botonPresionado('*')">x</button>
+            </div>
+        </div>
     </div>
-
     <script src="./public/js/operaciones.js"></script>
     <script src="./public/lib/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
