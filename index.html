@@ -10,34 +10,76 @@
 
 <body>
     <div class="align-items-center d-flex justify-content-center vh-100">
-        <div class="container bg-black py-3 rounded-3">
-            <div class="text-center text-white">
-                <h1>CALCULADORA</h1>
+        <div class="container bg-black py-3 rounded-3 w-25">
+            <div class="text-center text-white fs-4">
+                <p>CALCULADORA</p>
                 <hr>
-                <input type="text" id="display" class="d-flex w-100">
+                <input type="text" id="display" class="form-control text-end" value="0">
             </div>
             <div class="pt-3">
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('7')">7</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('8')">8</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('9')">9</button>
-                <button class="btn btn-warning rounded-5" onclick="botonPresionado('+')">+</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('4')">4</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('5')">5</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('6')">6</button>
-                <button class="btn btn-warning rounded-5" onclick="botonPresionado('-')">-</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('1')">1</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('2')">2</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('3')">3</button>
-                <button class="btn btn-warning rounded-5" onclick="botonPresionado('/')">/</button>
-                <button class="btn btn-secondary rounded-5" onclick="botonPresionado('0')">0</button>
-                <button class="btn btn-secondary rounded-5" onclick="calcular()">=</button>
-                <button class="btn btn-warning rounded-5" onclick="limpiar()">C</button>
-                <button class="btn btn-warning rounded-5" onclick="botonPresionado('*')">x</button>
+                <div class="row g-2 mb-2">
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5"  onclick="botonPresionado('7')">7</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('8')">8</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('9')">9</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-warning w-100 rounded-5" onclick="botonPresionado('+')">+</button>
+                    </div>
+                </div>
+                <div class="row g-2 mb-2">
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('4')">4</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('5')">5</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('6')">6</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-warning w-100 rounded-5" onclick="botonPresionado('-')">-</button>
+                    </div>
+                </div>
+
+                <div class="row g-2 mb-2">
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('1')">1</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('2')">2</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('3')">3</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-warning w-100 rounded-5" onclick="botonPresionado('/')">/</button>
+                    </div>
+
+                </div>
+
+                <div class="row g-2 mb-2">
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('0')">0</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100 rounded-5" onclick="calcular()">=</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-warning w-100 rounded-5" onclick="limpiar()">C</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-warning w-100 rounded-5" onclick="botonPresionado('*')">x</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="./public/js/operaciones.js"></script>
-    <script src="./public/lib/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="./public/js/operaciones.js"></script>
+        <script src="./public/lib/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
