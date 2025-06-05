@@ -9,14 +9,20 @@
 </head>
 
 <body>
-    <div class="align-items-center d-flex justify-content-center vh-100">
-        <div class="container bg-black py-3 rounded-3 w-25">
+
+    <div class="align-items-center d-flex justify-content-center vh-100">   <!--CONTENEDOR PRINCIPAL DE LA CALCULADORA-->
+        <div class="container bg-black py-3 rounded-3 w-25"> <!-- CONTENEDOR DE LA CALCULADORA -->
+            <!--CONTENEDOR DE LA PANTALLA-->
             <div class="text-center text-white fs-4">
                 <p>CALCULADORA</p>
                 <hr>
                 <input type="text" id="display" class="form-control text-end" value="0">
             </div>
+
+            <!--CONTENEDOR DE LOS BOTONES-->
             <div class="pt-3">
+
+                <!--CONTENEDOR DE LA FILA 1 DE LA CALCULADORA-->
                 <div class="row g-2 mb-2">
                     <div class="col">
                         <button class="btn btn-secondary w-100 rounded-5"  onclick="botonPresionado('7')">7</button>
@@ -31,6 +37,8 @@
                         <button class="btn btn-warning w-100 rounded-5" onclick="botonPresionado('+')">+</button>
                     </div>
                 </div>
+
+                <!--CONTENEDOR DE LA FILA 2 DE LA CALCULADORA-->
                 <div class="row g-2 mb-2">
                     <div class="col">
                         <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('4')">4</button>
@@ -46,6 +54,7 @@
                     </div>
                 </div>
 
+                <!--CONTENEDOR DE LA FILA 3 DE LA CALCULADORA-->
                 <div class="row g-2 mb-2">
                     <div class="col">
                         <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('1')">1</button>
@@ -62,6 +71,7 @@
 
                 </div>
 
+                <!--CONTENEDOR DE LA FILA 4 DE LA CALCULADORA-->
                 <div class="row g-2 mb-2">
                     <div class="col">
                         <button class="btn btn-secondary w-100 rounded-5" onclick="botonPresionado('0')">0</button>
