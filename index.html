@@ -12,23 +12,23 @@
         <hr>
         <input type="text" id="display" class="form-control mb-3">
 
-        <button class="btn btn-danger" onclick="borrar()">C</button>
-        <button class="btn btn-primary" onclick="multiplicar()">X</button>
-        <button class="btn btn-primary" onclick="dividir()">/</button>
-        <button class="btn btn-primary" onclick="restar()">-</button>
-        <button onclick="mostrarEnCalculadora('7')">7</button>
-        <button onclick="mostrarEnCalculadora('8')">8</button>
-        <button onclick="mostrarEnCalculadora('9')">9</button>
-        <button class="btn btn-primary" onclick="sumar()">+</button>
-        <button onclick="mostrarEnCalculadora('4')">4</button>
-        <button onclick="mostrarEnCalculadora('5')">5</button>
-        <button onclick="mostrarEnCalculadora('6')">6</button>
+        <button class="btn btn-danger" onclick="limpiar()">C</button>
+        <button class="btn btn-primary" onclick="botonPresionado('*')">X</button>
+        <button class="btn btn-primary" onclick="botonPresionado('/')">/</button>
+        <button class="btn btn-primary" onclick="botonPresionado('-')">-</button>
+        <button onclick="botonPresionado('7')">7</button>
+        <button onclick="botonPresionado('8')">8</button>
+        <button onclick="botonPresionado('9')">9</button>
+        <button class="btn btn-primary" onclick="botonPresionado('+')">+</button>
+        <button onclick="botonPresionado('4')">4</button>
+        <button onclick="botonPresionado('5')">5</button>
+        <button onclick="botonPresionado('6')">6</button>
 
-        <button onclick="mostrarEnCalculadora('1')">1</button>
-        <button onclick="mostrarEnCalculadora('2')">2</button>
-        <button onclick="mostrarEnCalculadora('3')">3</button>
+        <button onclick="botonPresionado('1')">1</button>
+        <button onclick="botonPresionado('2')">2</button>
+        <button onclick="botonPresionado('3')">3</button>
 
-        <button onclick="mostrarEnCalculadora('0')">0</button>
+        <button onclick="botonPresionado('0')">0</button>
 
         <button class="btn btn-success" onclick="calcular()">=</button>
     </div>

@@ -1,63 +1,22 @@
-let operador = '';
-let primerNumero = '';
-
-function mostrarEnCalculadora(valor) {
+function botonPresionado(valor) {
     let display = document.getElementById("display");
     display.value += valor;
 }
 
-function borrar() {
-    document.getElementById("display").value = '';
-    primerNumero = '';
-    operador = '';
+function limpiar() {
+    display.value = '';
 }
-
-
-function sumar() {
-    primerNumero = document.getElementById("display").value;
-    operador = '+';
-    document.getElementById("display").value = '';
-}
-
-function restar() {
-    primerNumero = document.getElementById("display").value;
-    operador = '-';
-    document.getElementById("display").value = '';
-}
-
-function multiplicar() {
-    primerNumero = document.getElementById("display").value;
-    operador = '*';
-    document.getElementById("display").value = '';
-}
-
-function dividir() {
-    primerNumero = document.getElementById("display").value;
-    operador = '/';
-    document.getElementById("display").value = '';
-}
-
 
 function calcular() {
-    let segundoNumero = document.getElementById("display").value;
-    let resultado = 0;
+    try {
+        let resultado = eval(display.value);
 
-    if (operador === '+') {
-        resultado = parseFloat(primerNumero) + parseFloat(segundoNumero);
-    } else if (operador === '-') {
-        resultado = parseFloat(primerNumero) - parseFloat(segundoNumero);
-    } else if (operador === '*') {
-        resultado = parseFloat(primerNumero) * parseFloat(segundoNumero);
-    } else if (operador === '/') {
-        if (parseFloat(segundoNumero) === 0) {
-            alert("No se puede dividir por cero.");
-            document.getElementById("display").value = '';
-            return;
+        if (resultado === Infinity) {
+            display.value = 'Error!';
+        } else {
+            display.value = resultado;
         }
-        resultado = parseFloat(primerNumero) / parseFloat(segundoNumero);
+    } catch (error) {
+        display.value = 'Error!';
     }
-
-    document.getElementById("display").value = resultado;
-    operador = '';
-    primerNumero = '';
 }
